@@ -1,0 +1,51 @@
+Water pump Project
+#providing features:
+1.amount_tsh              = Total static head (amount water available to waterpoint) = float64 = 0
+2.date_recorded           = The date the row was entered = object = 0
+3.funder                  = Who funded the well = object = 3637
+4.gps_height              = Altitude of the well = int64 = 0
+5.installer               = Organization that installed the well = object = 3655 
+6.longitude               = GPS coordinate = float64 = 0
+7.latitude                = GPS coordinate = float64 = 0
+8.wpt_name                = Name of the waterpoint if there is one = object = 2
+9.num_private             =   = int64 = 0
+10.basin                  = Geographic water basin = object = 0 
+11.subvillage             = Geographic location = object = 371
+12.region                 = Geographic location = object = 0
+13.region_code            = Geographic location (coded) = int64 = 0 
+14.district_code          = Geographic location (coded) = int64 = 0
+15.lga                    = Geographic location = object = 0
+16.ward                   = Geographic location = object = 0
+17.population             = Population around the well = int64 = 0 
+18.public_meeting         = True/False = object = 3334
+19.recorded_by            = Group entering this row of data = object = 0
+20.scheme_management      = Who operates the waterpoint = object = 3878
+21.scheme_name            = Who operates the waterpoint = object = 28810 = suggest for drop
+22.permit                 = If the waterpoint is permitted = object = 3056
+23.construction_year      = Year the waterpoint was constructed = int64 = 0
+24.extraction_type        = The kind of extraction the waterpoint uses = object = 0
+25.extraction_type_group  = The kind of extraction the waterpoint uses = object = 0
+26.extraction_type_class  =The kind of extraction the waterpoint uses = object = 0
+27.management             = How the waterpoint is managed = object = 0
+29.management_group       = How the waterpoint is managed = object = 0
+30.payment                = What the water costs = object = 0
+31.payment_type           = What the water costs = object = 0
+32.water_quality          = The quality of the water = object = 0
+33.quality_group          = The quality of the water = object = 0
+34.quantity               = The quantity of water = object = 0
+35.quantity_group         = The quantity of water = object = 0
+36.source                 = The source of the water = object = 0
+37.source_type            = The source of the water = object = 0
+38.source_class           = The source of the water = object = 0
+39.waterpoint_type        = The kind of waterpoint = object = 0
+40.waterpoint_type_group  = The kind of waterpoint = object = 0
+
+#The labels in this dataset
+functional                = the waterpoint is operational and there are no repairs needed
+functional needs repair   = the waterpoint is operational, but needs repairs
+non functional            = the waterpoint is not operational
+
+
+
+
+
