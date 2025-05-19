@@ -1,50 +1,115 @@
 Water pump Project
-#providing features:
-1.amount_tsh              = Total static head (amount water available to waterpoint) = float64 = 0
-2.date_recorded           = The date the row was entered = object = 0
-3.funder                  = Who funded the well = object = 3637
-4.gps_height              = Altitude of the well = int64 = 0
-5.installer               = Organization that installed the well = object = 3655 
-6.longitude               = GPS coordinate = float64 = 0
-7.latitude                = GPS coordinate = float64 = 0
-8.wpt_name                = Name of the waterpoint if there is one = object = 2
-9.num_private             =   = int64 = 0
-10.basin                  = Geographic water basin = object = 0 
-11.subvillage             = Geographic location = object = 371
-12.region                 = Geographic location = object = 0
-13.region_code            = Geographic location (coded) = int64 = 0 
-14.district_code          = Geographic location (coded) = int64 = 0
-15.lga                    = Geographic location = object = 0
-16.ward                   = Geographic location = object = 0
-17.population             = Population around the well = int64 = 0 
-18.public_meeting         = True/False = object = 3334
-19.recorded_by            = Group entering this row of data = object = 0
-20.scheme_management      = Who operates the waterpoint = object = 3878
-21.scheme_name            = Who operates the waterpoint = object = 28810 = suggest for drop
-22.permit                 = If the waterpoint is permitted = object = 3056
-23.construction_year      = Year the waterpoint was constructed = int64 = 0
-24.extraction_type        = The kind of extraction the waterpoint uses = object = 0
-25.extraction_type_group  = The kind of extraction the waterpoint uses = object = 0
-26.extraction_type_class  =The kind of extraction the waterpoint uses = object = 0
-27.management             = How the waterpoint is managed = object = 0
-29.management_group       = How the waterpoint is managed = object = 0
-30.payment                = What the water costs = object = 0
-31.payment_type           = What the water costs = object = 0
-32.water_quality          = The quality of the water = object = 0
-33.quality_group          = The quality of the water = object = 0
-34.quantity               = The quantity of water = object = 0
-35.quantity_group         = The quantity of water = object = 0
-36.source                 = The source of the water = object = 0
-37.source_type            = The source of the water = object = 0
-38.source_class           = The source of the water = object = 0
-39.waterpoint_type        = The kind of waterpoint = object = 0
-40.waterpoint_type_group  = The kind of waterpoint = object = 0
+#providing features:      = features meaning                                            = Data Type  = number of null value  = unique value
+1.amount_tsh              = Total static head (amount water available to waterpoint)    = float64    =   0                   =   98
+2.date_recorded           = The date the row was entered                                = object     =   0                   =   356
+3.funder                  = Who funded the well                                         = object     = 3637                  =   1896
+4.gps_height              = Altitude of the well                                        = int64      =   0                   =   2428
+5.installer               = Organization that installed the well                        = object     = 3655                  =   2145
+6.longitude               = GPS coordinate                                              = float64    =   0                   =   57516
+7.latitude                = GPS coordinate                                              = float64    =   0                   =   57517
+8.wpt_name                = Name of the waterpoint if there is one                      = object     =   2                   =   37399
+9.num_private             =                                                             = int64      =   0                   =   65
+10.basin                  = Geographic water basin                                      = object     =   0                   =   9
+11.subvillage             = Geographic location                                         = object     = 371                   =   19287
+12.region                 = Geographic location                                         = object     =   0                   =   21
+13.region_code            = Geographic location (coded)                                 = int64      =   0                   =   27
+14.district_code          = Geographic location (coded)                                 = int64      =   0                   =   20
+15.lga                    = Geographic location                                         = object     =   0                   =   125
+16.ward                   = Geographic location                                         = object     =   0                   =   2092
+17.population             = Population around the well                                  = int64      =   0                   =   1049
+18.public_meeting         = True/False                                                  = object     = 3334                  =   2
+19.recorded_by            = Group entering this row of data                             = object     =   0                   =   1
+20.scheme_management      = Who operates the waterpoint                                 = object     = 3878                  =   11
+21.scheme_name            = Who operates the waterpoint                                 = object     = 28810                 =   2695 = drop 
+22.permit                 = If the waterpoint is permitted                              = object     = 3056                  =   2
+23.construction_year      = Year the waterpoint was constructed                         = int64      = 0                     =   55
+24.extraction_type        = The kind of extraction the waterpoint uses                  = object     = 0                     =   18
+25.extraction_type_group  = The kind of extraction the waterpoint uses                  = object     = 0                     =   13
+26.extraction_type_class  =The kind of extraction the waterpoint uses                   = object     = 0                     =   7
+27.management             = How the waterpoint is managed                               = object     = 0                     =   12
+29.management_group       = How the waterpoint is managed                               = object     = 0                     =   5
+30.payment                = What the water costs                                        = object     = 0                     =   7
+31.payment_type           = What the water costs                                        = object     = 0                     =   7
+32.water_quality          = The quality of the water                                    = object     = 0                     =   8
+33.quality_group          = The quality of the water                                    = object     = 0                     =   6
+34.quantity               = The quantity of water                                       = object     = 0                     =   5
+35.quantity_group         = The quantity of water                                       = object     = 0                     =   5
+36.source                 = The source of the water                                     = object     = 0                     =   10
+37.source_type            = The source of the water                                     = object     = 0                     =   7
+38.source_class           = The source of the water                                     = object     = 0                     =   3
+39.waterpoint_type        = The kind of waterpoint                                      = object     = 0                     =   7
+40.waterpoint_type_group  = The kind of waterpoint                                      = object     = 0                     =   6
 
 #The labels in this dataset
 functional                = the waterpoint is operational and there are no repairs needed
 functional needs repair   = the waterpoint is operational, but needs repairs
 non functional            = the waterpoint is not operational
 
+My working features:
+1.public_meeting 3334
+2.scheme_management 3878
+3.cheme_name 28810
+4.permit 3056
+
+# need to check the balance or imbalance for terget column
+# I have to check the percentage of null value.Then i am allowed to take decision. 
+
+# Engineering on latitude and longitude:
+--meaningful approach for latitude and longitude for machine learning
+
+
+# missing values: scheme_name 
+    1. crosstab with scheme_management, funder, and region
+    2.for 'scheme_name', 'funder', 'installer', 'subvillage', 
+                    'scheme_management', 'permit' : i have imputed 'unknown'
+    3.for 'wpt_name', 'public_meeting': i have used mode value
+
+#Encoding:
+​When choosing an encoding method for categorical features, consider the following:
+1.Cardinality:
+2.Feature Type:
+3.Model Requirements
+4.Avoiding Bias:
+
+
+# Date-recoded:
+    1. year
+    2. month
+    3. day
+    4. day_of_week
+    5. week_number
+    6. month_year
+    7.Days Since Recorded:The number of days between a row’s date_recorded and a reference date.It quantifies how "recent" each entry is
+
+
+    #Chi-Squared Tests:
+        Presentation Tips
+            1.Slide Caption: “All date features show significant relationships with pump status (p-values << 0.05), with binned_days_since_recorded and month_recorded being strongest.”
+
+            2.Highlight: Point to the red line (p=0.05) and note all bars are near zero, confirming strong associations unlike weak Pearson correlations.
+
+            3.Context: Mention chi-squared tests capture categorical dependencies, justifying feature retention.
+
+
+# Important terms of Chi-squared:
+    1.Chi² Statistic: Measures how much the observed data deviate from terget data.A higher value indicates a greater difference.
+                      A high χ² statistic indicates a significant association between variables.​
+
+    2. P-value: Represents the probability that the observed association is due to chance.A smaller p-value suggests that the association is                        statistically significant.​
+
+    3. Degrees of Freedom: Related to the number of categories in the variables being tested
+#Interpretation from our result:
+    1.Statistical Significance:All features have extremely low p-values (much less than 0.05).
+    
+    2.indicating that there is a statistically significant association between each date-derived feature and the status_group.​
+    
+    3. Strength of Association:binned_days_since_recorded has the highest Chi² value, suggesting it has the strongest association with status_group                                among the features tested.​
+
+
+#pumps status distribution by month records
+    1.Peak in March:This could indicate a period of increased data collection or reporting
+    2. Low Counts in May and June:which might suggest reduced data collection or reporting during this period.
+    3. Consistent Reporting in Other Months:Months like January, February, July, and October show relatively consistent numbers, indicating steady                                              data collection.
 
 
 
